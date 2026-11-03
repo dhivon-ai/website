@@ -1,2 +1,8 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://dhivon.ai/sitemap.xml
-Sitemap: https://dhivon.ai/dhivon-sitemap.xml
+
+# Product sitemaps
+# https://cadre.dhivon.ai/sitemap.xml
+# https://mcp.gateway.dhivon.ai/sitemap.xml
