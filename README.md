@@ -1,7 +1,16 @@
 # Dhivon
 
-Source for [dhivon.ai](https://dhivon.ai), the Dhivon AI organisation website.
+The organisation website at [dhivon.ai](https://dhivon.ai). It uses the Next.js App Router, Tailwind CSS and shadcn/ui, with the typography and colours of Dhivon MCP Gateway.
 
-The site uses plain HTML, CSS and local brand assets. To preview it, run `python3 -m http.server 8000 --directory public` and open [localhost:8000](http://localhost:8000).
+## Development
 
-Cloudflare Pages publishes the `public` directory from `main`. No build command or environment variables are required.
+Use the Node version in `.node-version` and the pnpm version in `package.json`.
+
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+```
+
+## Production
+
+Run `pnpm build` to generate a static site in `out/`. Cloudflare Pages builds the `main` branch and serves that directory on `dhivon.ai` and `www.dhivon.ai`.
