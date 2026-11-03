@@ -33,10 +33,26 @@ export default function SitemapPage() {
             <li>
               <a href="https://cadre.dhivon.ai/">Cadre</a> · Spec-driven AI
               harness
+              <br />
+              <a href="https://cadre.dhivon.ai/overview/">
+                Cadre documentation
+              </a>
+              {" · "}
+              <a href="https://cadre.dhivon.ai/sitemap.xml">
+                Cadre XML sitemap
+              </a>
             </li>
             <li>
               <a href="https://mcp.gateway.dhivon.ai/">MCP Gateway</a> ·
               Enterprise tool access
+              <br />
+              <a href="https://mcp.gateway.dhivon.ai/docs/">
+                All Gateway guides
+              </a>
+              {" · "}
+              <a href="https://mcp.gateway.dhivon.ai/sitemap.xml">
+                Gateway XML sitemap
+              </a>
             </li>
           </ul>
         </section>
