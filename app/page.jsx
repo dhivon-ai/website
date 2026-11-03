@@ -30,8 +30,9 @@ export default function Home() {
               is on.
             </h1>
             <p>
-              Dhivon builds AI tooling for engineering teams. Give coding agents
-              a specification to work from and decide which tools they can use.
+              Dhivon builds AI tooling for engineering teams. Our aim is to
+              carry the reasoning behind a change from the first specification
+              through implementation, review and the next team decision.
             </p>
             <div className="mt-[38px] flex flex-wrap items-center gap-[30px]">
               <Button asChild>
@@ -45,35 +46,37 @@ export default function Home() {
           <div
             className="diagram"
             role="img"
-            aria-label="Engineering teams guide their coding agents with two decisions. Cadre captures the work to do. MCP Gateway controls the tools an agent may use."
+            aria-label="Our vision for engineering work. Team decisions and prior knowledge shape a specification. Agents use approved models and tools to implement it. Review findings and the reasons for a change inform future work."
           >
             <div className="diagram-control">
               <strong>Engineering team</strong>
-              <small>Sets the scope · grants tool access</small>
+              <small>Sets the scope · chooses models and tools</small>
             </div>
-            <div className="policy-line">Team decisions ↓</div>
+            <div className="policy-line">Engineering workflow ↓</div>
             <div className="diagram-flow">
               <div className="diagram-node">
                 <strong>Specification</strong>
-                <small>What to build</small>
+                <small>Intent and prior decisions</small>
               </div>
               <span className="arrow" aria-hidden="true">
                 →
               </span>
               <div className="diagram-node gateway">
                 <img src="/assets/logo.svg" width="54" height="54" alt="" />
-                <strong>Coding agent</strong>
-                <small>Works within the team's scope</small>
+                <strong>Implementation</strong>
+                <small>Models and tools help turn intent into code</small>
               </div>
               <span className="arrow" aria-hidden="true">
                 →
               </span>
               <div className="grid gap-5 max-[1100px]:grid-cols-2 max-[1100px]:gap-3">
                 <div className="diagram-node">
-                  <strong>Local tools</strong>
+                  <strong>Code review</strong>
+                  <small>Check the change against its intent</small>
                 </div>
                 <div className="diagram-node">
-                  <strong>Remote tools</strong>
+                  <strong>Team knowledge</strong>
+                  <small>Keep the reasoning for next time</small>
                 </div>
               </div>
             </div>
@@ -84,15 +87,16 @@ export default function Home() {
             <h2>Our philosophy</h2>
             <div>
               <p>
-                When intelligence is always on, a team should be able to answer
-                two questions about an agent’s work. What did we ask it to do?
-                What did we give it access to?
+                “Intelligence is on” means a team can put what it knows to work
+                at each stage of a change. A developer picking up a bug should
+                be able to find the original decision, give an agent a clear
+                task and see whether the proposed fix honours that decision.
               </p>
               <p>
-                These questions shape what we build. With Cadre, a reviewer can
-                trace a change back to an approved spec. With MCP Gateway, a
-                developer can see which tools the team permits and choose which
-                to enable.
+                Cadre captures the approved intent. MCP Gateway gives agents
+                access to the tools a team permits. Our roadmap extends that
+                work to choosing a model, writing the fix, reviewing the result
+                and preserving what the team learns for the next developer.
               </p>
             </div>
           </div>
@@ -102,7 +106,7 @@ export default function Home() {
           id="products"
           aria-labelledby="products-title"
         >
-          <h2 id="products-title">Our products</h2>
+          <h2 id="products-title">Current products</h2>
           <div className="role-row">
             <span className="role-number">01</span>
             <h3>Cadre</h3>
@@ -133,16 +137,44 @@ export default function Home() {
           id="roadmap"
           aria-labelledby="roadmap-title"
         >
-          <h2 id="roadmap-title">What comes next</h2>
+          <h2 id="roadmap-title">Product roadmap</h2>
           <p>
-            We’re exploring four more areas of AI tooling. Their scope and
-            release dates are still open.
+            These four planned products address different moments in a team’s
+            workflow. Their scope and release dates are still open.
           </p>
           <ul className="roadmap-list">
-            <li>LLM proxy / gateway</li>
-            <li>Coding agent</li>
-            <li>Code review agent</li>
-            <li>Organisation knowledge base</li>
+            <li>
+              <h3>LLM proxy / gateway</h3>
+              <p>
+                Give teams one place to choose which language models their tools
+                can call. A team could use a faster model to summarise a bug
+                report and a different one to reason through the fix.
+              </p>
+            </li>
+            <li>
+              <h3>Coding agent</h3>
+              <p>
+                Turn an approved task into a patch and tests. A developer could
+                hand over a reproducible bug and get back a change they can run,
+                inspect and revise.
+              </p>
+            </li>
+            <li>
+              <h3>Code review agent</h3>
+              <p>
+                Compare a proposed change with its specification and tests. Flag
+                a missed requirement or an untested edge case while the author
+                still has the reasoning fresh in mind.
+              </p>
+            </li>
+            <li>
+              <h3>Organisation knowledge base</h3>
+              <p>
+                Make past decisions available when a new question arises. The
+                next engineer touching a workaround could find why it exists and
+                what would make it safe to remove.
+              </p>
+            </li>
           </ul>
         </section>
       </main>
