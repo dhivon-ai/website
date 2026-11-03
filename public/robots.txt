@@ -1,1 +1,2 @@
 Sitemap: https://dhivon.ai/sitemap.xml
+Sitemap: https://dhivon.ai/dhivon-sitemap.xml

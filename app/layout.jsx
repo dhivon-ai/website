@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
             <span>AI tooling for engineering teams</span>
           </a>
           <nav aria-label="Footer">
-            <a href="/sitemap">Sitemap</a>
+            <a href="/sitemap.xml">Sitemap</a>
             <a href="https://github.com/dhivon-ai">GitHub</a>
             <a href="mailto:contact@dhivon.ai">Contact</a>
           </nav>
